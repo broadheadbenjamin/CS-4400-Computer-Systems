@@ -1,0 +1,154 @@
+called: gcc
+	/home/ben/Dropbox/School Files/CS 4400/Lab 6 (Malloc Lab)
+	gcc
+	-O2
+	-Wall
+	-c
+	-o
+	mdriver.o
+	mdriver.c
+
+called: gcc
+	/home/ben/Dropbox/School Files/CS 4400/Lab 6 (Malloc Lab)
+	gcc
+	-O2
+	-Wall
+	-c
+	-o
+	mm.o
+	mm.c
+
+called: gcc
+	/home/ben/Dropbox/School Files/CS 4400/Lab 6 (Malloc Lab)
+	gcc
+	-O2
+	-Wall
+	-c
+	-o
+	memlib.o
+	memlib.c
+
+called: gcc
+	/home/ben/Dropbox/School Files/CS 4400/Lab 6 (Malloc Lab)
+	gcc
+	-O2
+	-Wall
+	-c
+	-o
+	pagemap.o
+	pagemap.c
+
+called: gcc
+	/home/ben/Dropbox/School Files/CS 4400/Lab 6 (Malloc Lab)
+	gcc
+	-O2
+	-Wall
+	-c
+	-o
+	fsecs.o
+	fsecs.c
+
+called: gcc
+	/home/ben/Dropbox/School Files/CS 4400/Lab 6 (Malloc Lab)
+	gcc
+	-O2
+	-Wall
+	-c
+	-o
+	fcyc.o
+	fcyc.c
+
+called: gcc
+	/home/ben/Dropbox/School Files/CS 4400/Lab 6 (Malloc Lab)
+	gcc
+	-O2
+	-Wall
+	-c
+	-o
+	clock.o
+	clock.c
+
+called: gcc
+	/home/ben/Dropbox/School Files/CS 4400/Lab 6 (Malloc Lab)
+	gcc
+	-O2
+	-Wall
+	-c
+	-o
+	ftimer.o
+	ftimer.c
+
+called: gcc
+	/home/ben/Dropbox/School Files/CS 4400/Lab 6 (Malloc Lab)
+	gcc
+	-O2
+	-Wall
+	-o
+	mdriver
+	mdriver.o
+	mm.o
+	memlib.o
+	pagemap.o
+	fsecs.o
+	fcyc.o
+	clock.o
+	ftimer.o
+	-lm
+
+called: /usr/bin/ld
+	/home/ben/Dropbox/School Files/CS 4400/Lab 6 (Malloc Lab)
+	/usr/bin/ld
+	-plugin
+	/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so
+	-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
+	-plugin-opt=-fresolution=/tmp/cc60CNMy.res
+	-plugin-opt=-pass-through=-lgcc
+	-plugin-opt=-pass-through=-lgcc_s
+	-plugin-opt=-pass-through=-lc
+	-plugin-opt=-pass-through=-lgcc
+	-plugin-opt=-pass-through=-lgcc_s
+	--sysroot=/
+	--build-id
+	--eh-frame-hdr
+	-m
+	elf_x86_64
+	--hash-style=gnu
+	--as-needed
+	-dynamic-linker
+	/lib64/ld-linux-x86-64.so.2
+	-z
+	relro
+	-o
+	mdriver
+	/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+	/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o
+	/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o
+	-L/usr/lib/gcc/x86_64-linux-gnu/5
+	-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu
+	-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib
+	-L/lib/x86_64-linux-gnu
+	-L/lib/../lib
+	-L/usr/lib/x86_64-linux-gnu
+	-L/usr/lib/../lib
+	-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..
+	mdriver.o
+	mm.o
+	memlib.o
+	pagemap.o
+	fsecs.o
+	fcyc.o
+	clock.o
+	ftimer.o
+	-lm
+	-lgcc
+	--as-needed
+	-lgcc_s
+	--no-as-needed
+	-lc
+	-lgcc
+	--as-needed
+	-lgcc_s
+	--no-as-needed
+	/usr/lib/gcc/x86_64-linux-gnu/5/crtend.o
+	/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+

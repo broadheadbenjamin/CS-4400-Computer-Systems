@@ -1,0 +1,31 @@
+gcc -O2 -Wall   -c -o mdriver.o mdriver.c
+mdriver.c: In function ‘read_trace’:
+mdriver.c:485:5: warning: ignoring return value of ‘fscanf’, declared with attribute warn_unused_result [-Wunused-result]
+     fscanf(tracefile, "%d", &(trace->sugg_heapsize)); /* not used */
+     ^
+mdriver.c:486:5: warning: ignoring return value of ‘fscanf’, declared with attribute warn_unused_result [-Wunused-result]
+     fscanf(tracefile, "%d", &(trace->num_ids));     
+     ^
+mdriver.c:487:5: warning: ignoring return value of ‘fscanf’, declared with attribute warn_unused_result [-Wunused-result]
+     fscanf(tracefile, "%d", &(trace->num_ops));     
+     ^
+mdriver.c:488:5: warning: ignoring return value of ‘fscanf’, declared with attribute warn_unused_result [-Wunused-result]
+     fscanf(tracefile, "%d", &(trace->weight));        /* not used */
+     ^
+mdriver.c:511:6: warning: ignoring return value of ‘fscanf’, declared with attribute warn_unused_result [-Wunused-result]
+      fscanf(tracefile, "%u %u", &index, &size);
+      ^
+mdriver.c:518:6: warning: ignoring return value of ‘fscanf’, declared with attribute warn_unused_result [-Wunused-result]
+      fscanf(tracefile, "%u %u", &index, &size);
+      ^
+mdriver.c:525:6: warning: ignoring return value of ‘fscanf’, declared with attribute warn_unused_result [-Wunused-result]
+      fscanf(tracefile, "%ud", &index);
+      ^
+gcc -O2 -Wall   -c -o mm.o mm.c
+gcc -O2 -Wall   -c -o memlib.o memlib.c
+gcc -O2 -Wall   -c -o pagemap.o pagemap.c
+gcc -O2 -Wall   -c -o fsecs.o fsecs.c
+gcc -O2 -Wall   -c -o fcyc.o fcyc.c
+gcc -O2 -Wall   -c -o clock.o clock.c
+gcc -O2 -Wall   -c -o ftimer.o ftimer.c
+gcc -O2 -Wall -o mdriver mdriver.o mm.o memlib.o pagemap.o fsecs.o fcyc.o clock.o ftimer.o -lm
